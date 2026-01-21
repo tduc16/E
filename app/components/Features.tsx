@@ -1,27 +1,38 @@
 const features = [
-  { title: "Học mọi lúc", desc: "Truy cập bài học 24/7 trên mọi thiết bị" },
-  { title: "Giảng viên chất lượng", desc: "Chuyên gia nhiều năm kinh nghiệm" },
-  { title: "Chứng chỉ uy tín", desc: "Nâng cao hồ sơ nghề nghiệp" },
+  { title: "Học đúng trọng tâm", desc: "Nội dung được tinh gọn, dễ hiểu" },
+  { title: "Lộ trình rõ ràng", desc: "Phù hợp sinh viên & người mới" },
+  { title: "Thực hành thực tế", desc: "Áp dụng ngay sau khi học" },
 ];
 
 export default function Features() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-28 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-14">
-          Vì sao chọn E-Learning?
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="mb-20 max-w-2xl">
+          <h2 className="text-3xl font-semibold mb-4">
+            Học tập hiệu quả hơn
+          </h2>
+          <p className="text-gray-600">
+            Tập trung vào những gì quan trọng nhất cho người học.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-12">
           {features.map((f, i) => (
             <div
               key={i}
-              className="bg-white p-8 rounded-xl shadow hover:-translate-y-2 transition"
+              className="group bg-white p-8 border rounded-xl hover:shadow-md transition"
             >
-              <h3 className="text-xl font-semibold mb-3 text-blue-600">
+    
+              <span className="text-4xl font-semibold text-gray-200 group-hover:text-gray-300 transition">
+                {`0${i + 1}`}
+              </span>
+              <h3 className="text-lg font-medium mt-6 mb-3">
                 {f.title}
               </h3>
-              <p className="text-gray-600">{f.desc}</p>
+
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {f.desc}
+              </p>
             </div>
           ))}
         </div>

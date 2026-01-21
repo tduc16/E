@@ -1,13 +1,13 @@
 export default function CTA() {
   return (
-    <section className="bg-blue-600 text-white py-20 text-center">
-      <h2 className="text-3xl font-bold mb-4">
-        Sẵn sàng bắt đầu hành trình học tập?
+    <section className="py-24 text-center">
+      <h2 className="text-3xl font-semibold mb-4">
+        Bắt đầu học ngay hôm nay
       </h2>
-      <p className="mb-8 text-blue-100">
-        Đăng ký ngay hôm nay để truy cập hàng trăm khóa học chất lượng
+      <p className="text-gray-600 mb-8">
+        Không quảng cáo. Không lan man. Chỉ tập trung học.
       </p>
-      <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold">
+      <button className="bg-gray-900 text-white px-8 py-3 rounded-md text-sm">
         Đăng ký miễn phí
       </button>
     </section>

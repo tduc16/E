@@ -1,9 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-10 text-center">
-      <p className="text-sm">
-        © 2026 E-Learning Platform. All rights reserved.
-      </p>
+    <footer className="border-t py-10 text-center text-sm text-gray-500">
+      © 2026 E-Learning. Built with Next.js
     </footer>
   );
 }

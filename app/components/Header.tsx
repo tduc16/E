@@ -1,19 +1,25 @@
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm">
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <h1 className="text-2xl font-bold text-blue-600">E-Learning</h1>
+    <header className="border-b bg-white">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 className="text-xl font-semibold">E-Learning</h1>
 
-        <nav className="hidden md:flex gap-8 font-medium">
-          <a className="hover:text-blue-600" href="#">Trang chủ</a>
-          <a className="hover:text-blue-600" href="#">Khóa học</a>
-          <a className="hover:text-blue-600" href="#">Giảng viên</a>
-          <a className="hover:text-blue-600" href="#">Liên hệ</a>
+        <nav className="hidden md:flex gap-10 text-sm text-gray-600">
+          <a className="hover:text-gray-900" href="#">Trang chủ</a>
+          <a className="hover:text-gray-900" href="#">Khóa học</a>
+          <a className="hover:text-gray-900" href="#">Giảng viên</a>
         </nav>
 
-        <button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
-          Đăng nhập
-        </button>
+        {/* Auth buttons */}
+        <div className="flex items-center gap-3">
+          <button className="text-sm font-medium border px-4 py-2 rounded-md hover:bg-gray-100">
+            Đăng nhập
+          </button>
+
+          <button className="text-sm font-medium bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800">
+            Đăng ký
+          </button>
+        </div>
       </div>
     </header>
   );
