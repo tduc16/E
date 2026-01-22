@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTA() {
   return (
     <section className="py-28 bg-slate-50">
@@ -8,22 +10,14 @@ export default function CTA() {
           </h2>
 
           <p className="text-gray-600 mb-10">
-            Tham gia ngay để tiếp cận các khóa học chất lượng, lộ trình rõ ràng.
+            Tham gia ngay để tiếp cận các khóa học chất lượng.
           </p>
 
-          <button className="
-            bg-blue-500 
-            text-white 
-            px-10 
-            py-3 
-            rounded-lg 
-            text-sm 
-            font-medium 
-            hover:bg-blue-600 
-            transition
-          ">
-            Đăng ký ngay
-          </button>
+          <Link href="/register">
+            <button className="bg-blue-500 text-white px-10 py-3 rounded-lg text-sm font-medium hover:bg-blue-600 transition">
+              Đăng ký ngay
+            </button>
+          </Link>
         </div>
       </div>
     </section>
